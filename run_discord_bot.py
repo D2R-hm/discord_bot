@@ -60,7 +60,7 @@ def get_covid_num():
 def run_bot():
     client = discord.Client()
     TOKEN = os.environ['TOKEN']
-    MAIN_CH_ID = os.environ['MAIN_CH_ID'] # 一般ルーム
+    MAIN_CH_ID = int(os.environ['MAIN_CH_ID']) # 一般ルーム
 
     @client.event
     # bot起動時の処理
