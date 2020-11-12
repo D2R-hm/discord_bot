@@ -46,12 +46,14 @@ def get_covid_num():
     num_tokyo = get_web_data(yahoo_covid_url + 'tokyo', num_el)
     num_chiba = get_web_data(yahoo_covid_url + 'chiba', num_el)
     num_yamanashi = get_web_data(yahoo_covid_url + 'yamanashi', num_el)
+    num_aichi = get_web_data(yahoo_covid_url + 'aichi', num_el)
 
     covid_msg = '```CSS\n'
     covid_msg += '今日の新規感染者数\n'
     covid_msg += '東京：' + num_tokyo + '人\n'
     covid_msg += '千葉：' + num_chiba + '人\n'
     covid_msg += '山梨：' + num_yamanashi + '人\n'
+    covid_msg += '愛知：' + num_aichi + '人\n'
     covid_msg += '```'
 
     return covid_msg
