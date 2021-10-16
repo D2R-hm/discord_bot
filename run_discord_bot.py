@@ -79,7 +79,8 @@ def run_bot():
     client.run(TOKEN)
 
 def main():
-    run_bot()
+#     run_bot()
+    print('test')
 
 if __name__ == '__main__':
     main()
