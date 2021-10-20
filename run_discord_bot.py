@@ -64,6 +64,7 @@ def run_bot():
     TOKEN = os.environ['TOKEN']
     MAIN_CH_ID = int(os.environ['MAIN_CH_ID']) # 一般ルーム
 
+    get_covid_num() # debug
 #     @client.event
 #     # bot起動時の処理
 #     async def on_ready():
