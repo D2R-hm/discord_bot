@@ -26,7 +26,7 @@ def get_web_data(url, el):
     options.add_argument('--start-maximized');
 
     # Headlessモードを有効にする（コメントアウトするとブラウザが実際に立ち上がる）
-    options.set_headless(True)
+    options.headless = True
 
     driver_path = 'chromedriver'
     driver = webdriver.Chrome(executable_path=driver_path, chrome_options=options)
